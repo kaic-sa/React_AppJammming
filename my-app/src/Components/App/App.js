@@ -1,6 +1,10 @@
 import "./App.css";
 import React from "react";
 import ReactDOM from "react-dom";
+import App-searchbar from
+import App-playlist  from
+import App-searchresults from
+
 
 export class App extends React.Component {
   render() {
@@ -11,7 +15,7 @@ export class App extends React.Component {
       <div className="App">
         <div className="App-searchbar"></div>
         <div className="App-playlist">
-          <div className="App-searchresults"></div>
+        <div className="App-searchresults"></div>
         </div>
       </div>
     </div>;
