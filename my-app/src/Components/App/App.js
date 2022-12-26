@@ -6,7 +6,7 @@ export class App extends React.Component {
   render() {
     <div>
       <h1>
-        Ja<span className="highlight">mmm</span>ing
+        Ja<span className="highhlight">mmm</span>ing
       </h1>
       <div className="App">
         <div className="App-searchbar"></div>
