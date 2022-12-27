@@ -13,7 +13,9 @@ export class App extends React.Component {
           Ja<span className="highhlight">mmm</span>ing vamos nós
         </h1>
         <div className="App">
-          <div className="App-searchbar"></div>
+          <div className="App-searchbar">
+            <SearchBar></SearchBar>
+          </div>
           <div className="App-playlist">
             <div className="App-searchresults"></div>
           </div>
