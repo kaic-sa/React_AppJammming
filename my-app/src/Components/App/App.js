@@ -4,6 +4,7 @@ import ReactDOM from "react-dom";
 import { SearchBar } from "../SearchBar/SearchBar";
 import { SearchResults } from "../SearchResults/SearchResults";
 import { Playlist } from "../Playlist/Playlist";
+import Spotify from "../../util/Spotify";
 
 export class App extends React.Component {
   constructor(props) {
@@ -29,7 +30,11 @@ export class App extends React.Component {
   }
 
   search(term) {
-    console.log(term);
+    Spotify.search(term).then((result) => {
+      this.setState({
+        searchResults: result,
+      });
+    });
   }
 
   addTrack(track) {
@@ -60,11 +65,10 @@ export class App extends React.Component {
     });
   }
 
-  savePlaylist(playlistTracks) {
-    const trackURIs = [];
-    playlistTracks.map((element) =>
-      trackURIs.push("spotify:track:" + element.id)
-    );
+  savePlaylist() {
+    alert("saved !");
+
+    const trackURIs = this.state.playlistTracks.map((element) => element.uri);
   }
 
   render() {
