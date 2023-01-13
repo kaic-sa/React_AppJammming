@@ -25,7 +25,7 @@ export class Playlist extends React.Component {
           isRemoval={true}
         ></Tracklist>
         <button className="Playlist-save" onClick={this.props.onSave}>
-          SALVAR NO SPOTIFY
+          SALVAR NO SPOTIFY !
         </button>
       </div>
     );
