@@ -11,7 +11,7 @@ export class App extends React.Component {
     super(props);
     this.state = {
       searchResults: [],
-      playlistName: "My Playlist",
+      playlistName: "Dê um nome a sua playlist",
       playlistTracks: [],
     };
     this.addTrack = this.addTrack.bind(this);
@@ -66,8 +66,11 @@ export class App extends React.Component {
   savePlaylist() {
     const trackURIs = this.state.playlistTracks.map((element) => element.uri);
     Spotify.savePlaylist(this.state.playlistName, trackURIs).then(() => {
-      alert("saved !");
-      this.setState({ playlistName: "New Playlist", playlistTracks: [] });
+      alert("Salvo em seu spotify com sucesso :) ");
+      this.setState({
+        playlistName: "Dê um nome a sua playlist",
+        playlistTracks: [],
+      });
     });
   }
 
@@ -75,7 +78,7 @@ export class App extends React.Component {
     return (
       <div>
         <h1>
-          Ja<span className="highhlight">mmm</span>ing vamos nós
+          Ja<span className="highhlight">m + K</span>
         </h1>
         <div className="App">
           <SearchBar onSearch={this.search}></SearchBar>

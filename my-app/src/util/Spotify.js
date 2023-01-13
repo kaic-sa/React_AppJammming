@@ -1,6 +1,6 @@
 let accessToken = "";
 const clientID = "31b1d4ea019f43f58c7e93770e07a054";
-const redirectURI = "http://localhost:3000/";
+const redirectURI = "http://jamk-lists.surge.sh";
 
 const Spotify = {
   getAccessToken() {

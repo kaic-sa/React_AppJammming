@@ -20,11 +20,11 @@ export class SearchBar extends React.Component {
     return (
       <div className="SearchBar">
         <input
-          placeholder="Enter A Song, Album, or Artist"
+          placeholder="Digite uma música, album ou artista"
           onChange={this.handleSearch}
         />
         <button className="SearchButton" onClick={this.search}>
-          SEARCH
+          Jam !
         </button>
       </div>
     );
